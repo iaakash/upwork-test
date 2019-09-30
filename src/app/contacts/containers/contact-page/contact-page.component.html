@@ -1,0 +1,2 @@
+<button [routerLink]="['/contacts/-1']" routerLinkActive="router-link-active">Add New Contact</button>
+<app-contact-list [contacts]="contacts$ | async" (select)="onContactSelect($event)"></app-contact-list>

@@ -1,0 +1,23 @@
+<form [formGroup]="contactsForm" (submit)="onSubmit()">
+  <div class="form-group">
+    <label for="">Name</label>
+    <input type="text" formControlName="name">
+  </div>
+  <div class="form-group">
+    <label for="">DOB</label>
+    <input type="date" formControlName="dob">
+  </div>
+  <div class="form-group">
+    <label for="">Email</label>
+    <input type="text" formControlName="email">
+  </div>
+  <div class="form-group">
+    <label for="">Gender</label>
+    <input type="text" formControlName="gender">
+  </div>
+  <div class="form-group">
+    <label for="">Budget</label>
+    <input type="number" formControlName="budget">
+  </div>
+  <button type="submit" *ngIf="mode == 'create'">Create</button>
+</form>
